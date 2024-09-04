@@ -1,3 +1,9 @@
+/*Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
+/*Colors
+Green #06A816
+Orange #E75D02
+Black #000000
+White #ffffff*/
 *{
     font-family: Habibi;
 }
@@ -10,8 +16,9 @@ h2{
 h3{
     font-size: 1.25em;
 }
-header{
+header, footer {
     background-color: #06A816;
+    color: #ffffff;
 }
 body{
     background-color: #FFFFFF;
