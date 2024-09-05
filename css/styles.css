@@ -1,19 +1,30 @@
-/*Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
+/*Text Content Habibi
+Text Headings Irish Grover
+Font Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
 /*Colors
 Green #06A816
 Orange #E75D02
 Black #000000
 White #ffffff*/
-*{
-    font-family: Habibi;
+#static {
+    margin:0 auto;
 }
-h1{
+
+#fluid {
+    margin:0 auto;
+}
+
+html {
+    font-family: 'Habibi';
+}
+h1 {
+    font-family: 'Irish Grover';
     font-size: 2.5em;
 }
-h2{
+h2 {
     font-size: 1.75em;
 }
-h3{
+h3 {
     font-size: 1.25em;
 }
 header, footer {
