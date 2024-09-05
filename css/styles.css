@@ -40,3 +40,16 @@ body{
 /*-------------------- MEDIA QUERY (medium) ----------------*/
 /*-------------------- MEDIA QUERY (large) -----------------*/
 /*-------------------- MEDIA QUERY (xl) ---------------------*/
+/*-------------- Breakpoints based on mockups ----------------*/
+/*-------------- Small-min-width: 428px ----------------*/
+@media screen and (min-width: 428px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+/*-------------- Medium-width: 834px ----------------*/
+
+/*-------------- Large-min-width: 1280px ----------------*/
+
+/*-------------- XL-min-width: 1440px ----------------*/
