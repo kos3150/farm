@@ -13,7 +13,7 @@ White #ffffff*/
 #fluid {
     margin:0 auto;
 }
-
+/* -------------------- IMPORTED FONTS -------------------- */
 html {
     font-family: 'Habibi';
 }
@@ -34,3 +34,9 @@ header, footer {
 body{
     background-color: #FFFFFF;
 }
+/*-------------------- CSS REST ---------------------------*/
+/* -------------------- ROOT VARIABLES ------------------- */
+/* -------------GLOBAL STYLES (mobile first/small) ---------*/
+/*-------------------- MEDIA QUERY (medium) ----------------*/
+/*-------------------- MEDIA QUERY (large) -----------------*/
+/*-------------------- MEDIA QUERY (xl) ---------------------*/
