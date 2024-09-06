@@ -1,11 +1,16 @@
 /*Text Content Habibi
 Text Headings Irish Grover
 Font Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
-/*Colors
-Green #06A816
-Orange #E75D02
-Black #000000
-White #ffffff*/
+/*Colors*/
+:root{
+
+    --Green: #06A816;
+    --Orange: #E75D02;
+    --Black: #000000;
+    --White: #ffffff;
+    
+}
+
 #static {
     margin:0 auto;
 }
