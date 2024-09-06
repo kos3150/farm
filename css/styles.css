@@ -19,7 +19,6 @@ body{
 }
 
 header{
-    padding: 1rem;
     background-color: var(--Green);
     color: var(--White)
 }
@@ -55,14 +54,14 @@ nav ul {
 
 nav a {
     display: block;
-    margin: 1rem auto;
+    margin: 4rem;
     padding: 1rem;
-    text-decoration: none;
+    text-align: center;
     background-color: var(--Orange);
     color: var(--White);
     font-size: 1.25rem;
     border: 1px solid var(--White);
-    border-radius: 32px;
+    border-radius: 10px;
 }
 
 main{
