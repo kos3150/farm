@@ -7,10 +7,25 @@ Font Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
     --Green: #06A816;
     --Orange: #E75D02;
     --Black: #000000;
-    --White: #ffffff;
-    
+    --White: #ffffff;    
 }
 
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: orang#E75D02;
+    color: #ffffff;
+    font-size: 1.25rem;
+    border: 1px solid white;
+    border-radius: 32px;
+
+}
 #static {
     margin:0 auto;
 }
