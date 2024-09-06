@@ -1,13 +1,48 @@
-/*Text Content Habibi
-Text Headings Irish Grover
-Font Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
-/*Colors*/
 :root{
-
+    /* -------------------- ROOT VARIABLES ------------------- */
+    /*Text Content Habibi
+    Text Headings Irish Grover
+    Font Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
+    /* text and background colors*/
     --Green: #06A816;
     --Orange: #E75D02;
     --Black: #000000;
-    --White: #ffffff;    
+    --White: #ffffff;
+    
+    /* Font Stacks*/
+    --heading-fonts: 'Irish Grover';
+    --body-fonts: 'Habibi';
+}
+
+body{
+    font-family: var(--body_fonts);
+}
+
+header{
+    padding: 1rem;
+    background-color: var(--Green);
+    color: var(--White)
+}
+
+h1, h2, h3{
+    text-align: left;
+    font-family: var(--heading-fonts);
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+    padding: 4px;
+}
+
+h3{
+    margin: 0;
+    padding: 4px;
+}
+
+nav{
+    margin: 0 auto;
+    padding: 0.5rem 0;
 }
 
 nav ul {
@@ -15,17 +50,29 @@ nav ul {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     list-style-type: none;
+    padding-left: 0;
 }
 
 nav a {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
     text-decoration: none;
-    background-color: orang#E75D02;
-    color: #ffffff;
+    background-color: var(--Orange);
+    color: var(--White);
     font-size: 1.25rem;
-    border: 1px solid white;
+    border: 1px solid var(--White);
     border-radius: 32px;
-
 }
+
+main{
+    padding: 2rem 1rem;
+}
+
+section{
+    padding: 1rem;
+}
+
 #static {
     margin:0 auto;
 }
@@ -55,12 +102,13 @@ body{
     background-color: #FFFFFF;
 }
 /*-------------------- CSS REST ---------------------------*/
-/* -------------------- ROOT VARIABLES ------------------- */
 /* -------------GLOBAL STYLES (mobile first/small) ---------*/
-/*-------------------- MEDIA QUERY (medium) ----------------*/
-/*-------------------- MEDIA QUERY (large) -----------------*/
-/*-------------------- MEDIA QUERY (xl) ---------------------*/
+
+
 /*-------------- Breakpoints based on mockups ----------------*/
+
+/*------------------- MEDIA QUERY (xl) ---------------------*/
+
 /*-------------- Small-min-width: 428px ----------------*/
 @media screen and (min-width: 428px) {
     nav ul {
@@ -68,8 +116,26 @@ body{
         grid-template-columns: auto;
     }
 }
+/*------------- MEDIA QUERY (medium) ----------------*/
 /*-------------- Medium-width: 834px ----------------*/
-
+@media screen and (medium-width: 834px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+    }    
+}
+/*-------------------- MEDIA QUERY (large) -----------------*/
 /*-------------- Large-min-width: 1280px ----------------*/
-
+@media screen and (large-min-width: 1280px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
 /*-------------- XL-min-width: 1440px ----------------*/
+@media screen and (XL-min-width: 1440px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
