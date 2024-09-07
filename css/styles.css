@@ -9,7 +9,7 @@
     --Black: #000000;
     --White: #ffffff;
 
-    --shadow-sm: -5px var(var(--Black))
+    --text-shadow: -5px var(var(--Black))
     
     /* Font Stacks*/
     --heading-fonts: 'Irish Grover';
@@ -18,26 +18,29 @@
 
 body{
     font-family: var(--body_fonts);
-    color: var(--Black);   
+    color: var(--Black);
 }
 
-header{
+header{ 
     background-color: var(--Green);
-    color: var(--White)
+    color: var(--White);  
 }
 
 header, footer{
     background-color: var(--Green);
     text-align: left;
-    width: 1000px;
+    max-width: 1000px - 32px;
     margin: 0 auto;
     padding: 1rem;
     color: var(--White);
 }
+
+main{
+    text-align: left;
 }
 
 h1{
-
+    text-shadow: var(--Black);
 }
 
 h1, h2, h3{
@@ -47,7 +50,7 @@ h1, h2, h3{
 
 h2{
     margin: 0;
-    text-align: center;
+    text-align: right;
     padding: 4px;
 }
 
@@ -56,9 +59,14 @@ h3{
     padding: 4px;
 }
 
+img{
+    display:block;    
+}
+
 nav{
     margin: 0 auto;
     padding: 0.5rem 0;
+    text-align: right;
 }
 
 nav ul {
@@ -68,7 +76,7 @@ nav ul {
     gap: 3rem;
     list-style-type: none;
     padding: 0;
-    width: 500px;
+    width: 350px;
     margin: 2rem auto;    
 }
 
@@ -164,4 +172,13 @@ body{
         display: grid;
         grid-template-columns: auto;
     }
+}
+
+footer p{
+    padding: 16px;
+    text-align: center;
+}
+
+footer > a{
+    text-align: center;
 }
