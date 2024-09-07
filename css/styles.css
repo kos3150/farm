@@ -16,11 +16,24 @@
 
 body{
     font-family: var(--body_fonts);
+    color: var(--Black);
+    margin: 0;
 }
 
 header{
     background-color: var(--Green);
     color: var(--White)
+}
+
+header, main, footer{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header, footer{
+    background-color: var(--Green);
+    text-align: center;
 }
 
 h1, h2, h3{
@@ -46,10 +59,12 @@ nav{
 
 nav ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
+    width: 300px;
+    margin: 2rem auto;    
 }
 
 nav a {
@@ -93,12 +108,19 @@ h2 {
 h3 {
     font-size: 1.25em;
 }
-header, footer {
-    background-color: #06A816;
-    color: #ffffff;
+
+#fruits{
+    text-align: right;
+    margin: 3rem auto;
 }
+
+#vegetables{
+    text-align: right;
+    margin: 3rem auto;
+}
+
 body{
-    background-color: #FFFFFF;
+    background-color: var(--White);
 }
 /*-------------------- CSS REST ---------------------------*/
 /* -------------GLOBAL STYLES (mobile first/small) ---------*/
