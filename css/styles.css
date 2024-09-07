@@ -8,6 +8,8 @@
     --Orange: #E75D02;
     --Black: #000000;
     --White: #ffffff;
+
+    --shadow-sm: -5px var(var(--Black))
     
     /* Font Stacks*/
     --heading-fonts: 'Irish Grover';
@@ -16,8 +18,7 @@
 
 body{
     font-family: var(--body_fonts);
-    color: var(--Black);
-    margin: 0;
+    color: var(--Black);   
 }
 
 header{
@@ -31,8 +32,12 @@ header, footer{
     width: 1000px;
     margin: 0 auto;
     padding: 1rem;
-    color: var(--White)
+    color: var(--White);
 }
+}
+
+h1{
+
 }
 
 h1, h2, h3{
