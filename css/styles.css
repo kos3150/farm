@@ -76,7 +76,7 @@ nav ul {
     gap: 3rem;
     list-style-type: none;
     padding: 0;
-    width: 350px;
+    width: 250px;
     margin: 2rem auto;    
 }
 
@@ -120,6 +120,7 @@ h2 {
 }
 h3 {
     font-size: 1.25em;
+    color: var(--Black)
 }
 
 #fruits{
@@ -151,6 +152,7 @@ body{
     }
 }
 /*------------- MEDIA QUERY (medium) ----------------*/
+
 /*-------------- Medium-width: 834px ----------------*/
 @media screen and (medium-width: 834px) {
     nav ul {
@@ -175,7 +177,9 @@ body{
 }
 
 footer p{
-    padding: 16px;
+    display: grid;
+    text-s
+    padding: 8px;
     text-align: center;
 }
 
