@@ -104,6 +104,7 @@ nav a {
 
 main{
     padding: 2rem 1rem;
+    text-align: center;
 }
 
 section{
@@ -127,24 +128,43 @@ h1 {
 }
 h2 {
     font-size: 1.75em;
+    text-align: left;
 }
 h3 {
     font-size: 1.25em;
-    color: var(--Black)
+    color: var(--Black);
+    text-align: left;
 }
 
 #fruits{
-    text-align: right;
+    text-align: left;
     margin: 3rem auto;
 }
 
 #vegetables{
-    text-align: right;
+    text-align: left;
     margin: 3rem auto;
 }
 
 body{
     background-color: var(--White);
+    text-align: left;
+}
+
+footer{
+    padding: 0;
+    background-color: var(--Green);
+    color: var(--White);
+    text-align: center;
+}
+footer p{
+    display: grid;
+    padding: 8px;
+    text-align: center;
+}
+
+footer > a{
+    text-align: left;
 }
 
 /* -------------GLOBAL STYLES (mobile first/small) ---------*/
@@ -156,7 +176,8 @@ body{
 
 /*-------------- Small-min-width: 428px ----------------*/
 @media screen and (min-width: 428px) {
-    nav ul {
+    nav {
+        width: fit-content;
         display: grid;
         grid-template-columns: auto;
     }
@@ -167,7 +188,8 @@ body{
 @media screen and (medium-width: 834px) {
     nav ul {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
     }    
 }
 /*-------------------- MEDIA QUERY (large) -----------------*/
@@ -181,17 +203,8 @@ body{
 /*-------------- XL-min-width: 1440px ----------------*/
 @media screen and (XL-min-width: 1440px) {
     nav ul {
-        display: grid;
-        grid-template-columns: auto;
+       display: grid;
+       grid-template-columns: auto; 
+    }       
     }
-}
 
-footer p{
-    display: grid;
-    padding: 8px;
-    text-align: center;
-}
-
-footer > a{
-    text-align: center;
-}
