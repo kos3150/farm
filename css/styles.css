@@ -164,7 +164,11 @@ footer p{
 }
 
 footer > a{
-    text-align: left;    
+    text-align: center;    
+}
+
+footer ul{
+    text-align: center;
 }
 
 /* -------------GLOBAL STYLES (mobile first/small) ---------*/
