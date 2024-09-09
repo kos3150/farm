@@ -1,12 +1,14 @@
 /* -------------------- IMPORTED FONTS -------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
 
-/*-------------------- CSS REST ---------------------------*/
+/*-------------------- CSS REST ---------------------------
+CSS Reset only works if I add it before I write my css.
+I don't know how to delete my css and save it in order to retain it to add back to my style sheet after the CSS REST*/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 :root{
     
     /* -------------------- ROOT VARIABLES ------------------- */
