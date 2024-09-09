@@ -46,7 +46,7 @@ header, footer{
 }
 
 main{
-    text-align: left;
+    text-align: center;
 }
 
 h1{
@@ -159,12 +159,12 @@ footer{
 }
 footer p{
     display: grid;
-    padding: 8px;
-    text-align: center;
+    padding:0;
+    text-align: center;   
 }
 
 footer > a{
-    text-align: left;
+    text-align: left;    
 }
 
 /* -------------GLOBAL STYLES (mobile first/small) ---------*/
