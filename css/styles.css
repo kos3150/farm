@@ -9,208 +9,316 @@ I don't know how to delete my css and save it in order to retain it to add back 
    v2.0 | 20110126
    License: none (public domain)
 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS VARIABLES */
 :root{
-    
-    /* -------------------- ROOT VARIABLES ------------------- */
-    /*Text Content Habibi
-    Text Headings Irish Grover
-    Font Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
-    /* text and background colors*/
-    --Green: #06A816;
-    --Orange: #E75D02;
-    --Black: #000000;
-    --White: #ffffff;
+    --red: #613A43;
+    --tan: #837C6F;
+    --mint: #AFC0B4;
+    --white: #F6F3EA;
+    --coral: #CE7871;
+    --dk-gray: #222;
 
-    --text-shadow: -5px var(var(--Black));
-    
-    /* Font Stacks*/
-    --heading-fonts: 'Irish Grover';
-    --body-fonts: 'Habibi';
+    --fonts: 'Trebuchet MS', Verdana, sans-serif;
+    --code-fonts: 'Lucida Console', monospace;
 }
 
+/* Body Styles */
+/* You will need to add more, but this adds a background pattern to the page */
 body{
-    font-family: var(--body_fonts);
-    color: var(--Black);
+    background: var(--coral) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23613a43' fill-opacity='0.2'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    font-family: var(--fonts);
+    color: var(--dk-gray);
+    margin: 0;
+    line-height: 1.35;
 }
 
-header{ 
-    background-color: var(--Green);
-    color: var(--White);  
-}
-
-header, footer{
-    background-color: var(--Green);
-    text-align: left;
-    max-width: 1000px - 32px;
-    margin: 0 auto;
+/* Styles for the Header, Main, & Footer */
+/* Limits the width, adds a background color and padding, and centers them on the page */
+header, main, footer{
     padding: 1rem;
-    color: var(--White);
+    width: calc(1000px - 2rem);
+    margin: 0 auto;
+    background-color: var(--white);
 }
 
-main{
+/* Shared header and footer styles */
+header, footer{
     text-align: center;
+    background-color: var(--mint);
+}
+
+/* Navigation Styles */
+nav{
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+    margin: 1em 0;
+}
+
+nav a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+/* Nav Hover Styles */
+nav a:hover{
+    color: var(--red);
+    background-color: var(--white);
+}
+
+/* Styles for the Sections in the Main */
+main > section{
+    padding: 1rem 0;
 }
 
 h1{
-    text-shadow: var(--Black);
-}
-
-h1, h2, h3{
-    text-align: left;
-    font-family: var(--heading-fonts);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.67em 0;
 }
 
 h2{
-    margin: 0;
-    text-align: right;
-    padding: 4px;
+    font-size: 1.5rem;
+    margin: 0.83em 0;
+    font-weight: bold;
 }
 
 h3{
-    margin: 0;
-    padding: 4px;
+    font-size: 1.17rem;
+    font-weight: bold;
+    margin: 1em 0;
 }
 
-img{
-    display:block;    
-}
-
-nav{
-    margin: 0 auto;
-    padding: 0.5rem 0;
-    text-align: right;
-}
-
-nav ul {
-    display: grid;
-    grid-template-columns: repeat(3fr, 1fr);
-    text-align: right;
-    gap: 1rem;
-    list-style-type: none;
-    padding: 0;
-    width: 250px;
-    margin: 2rem auto;    
-}
-
-nav a {
-    display: block;
-    margin: 1rem auto;
-    padding: 0.5rem;
-    text-align: center;
-    background-color: var(--Orange);
-    color: var(--White);
-    font-size: 1.25rem;
-    border: 2px solid var(--White);
-    border-radius: 5px;
-}
-
-main{
-    padding: 2rem 1rem;
+/* Styles for the h2 & h3 tags */
+h2, h3{
     text-align: center;
 }
 
-section{
+/* Paragraph Styles */
+p{
+    max-width: 65ch;
+    margin: 0.5rem auto;
+}
+
+/* Link Styles */
+a{
+    color: var(--red);
+}
+
+/* Link Hover Styles */
+a:hover{
+    text-decoration-color: var(--mint);
+}
+
+/* Link Focus Styles */
+a:focus{
+    outline-color: var(--coral);
+    outline-offset: 2px;
+}
+
+/* Form Styles */
+form{
+    width: 300px;
     padding: 1rem;
+    margin: 0 auto;
+
 }
 
-#static {
-    margin:0 auto;
+/* Input, Label, and textarea styles  */
+input, label, textarea{
+    display: block;
 }
 
-#fluid {
-    margin:0 auto;
+/* For the asterisks in the form section */
+.required{
+    color: var(--coral);
 }
 
-html {
-    font-family: 'Habibi';
-}
-h1 {
-    font-family: 'Irish Grover';
-    font-size: 2.5em;
-}
-h2 {
-    font-size: 1.75em;
-    text-align: left;
-}
-h3 {
-    font-size: 1.25em;
-    color: var(--Black);
-    text-align: left;
+/* Shared input and textarea Styles */
+input, textarea{
+    margin: 0.25rem 0 1rem 0;
+    width: calc(100% - 8px);
+    border: 2px solid var(--red);
 }
 
-#fruits{
-    text-align: left;
-    margin: 3rem auto;
+/* Input and Textarea Focus Styles */
+input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
+    border-color: var(--coral);
+    outline: 2px solid var(--coral);
 }
 
-#vegetables{
-    text-align: left;
-    margin: 3rem auto;
+/* input styles */
+input{
+    height: 2rem;
 }
 
-body{
-    background-color: var(--White);
-    text-align: left;
-}
-
-footer{
-    padding: 0;
-    background-color: var(--Green);
-    color: var(--White);
-    text-align: center;
-}
-footer p{
+/* Fieldset Styles */
+fieldset{
     display: grid;
-    padding:0;
-    text-align: center;   
+    grid-template-columns: 0.25fr 6fr 0.25fr 6fr;
+    gap: 1rem;
+    margin: 1rem 0;
+    border-color: var(--red);
+    padding: 0.35em 0.75em 0.25em 0.75em;
+    border: 2px groove var(--dk-gray);   
 }
 
-footer > a{
-    text-align: center;    
+legend{
+    padding: 0 2px;
 }
 
-footer ul{
+/* Code for Custom Radios - Compare to Your zyBook, I added additional code to make these match my form styles */
+input[type=radio] + label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+input[type=radio] {
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 0;
+    border-radius: 0;
+}
+
+input[type=radio] + label::before {
+    content: "\00a0";   /* Non-breaking space */
+    font-size: 2.75em;
+    line-height: 0.3;
+    border-radius: 50%;
+    display: inline-block;  
+    height: 21px;
+    width: 22px;
     text-align: center;
+    margin-right: 16px;
+    border: 2px solid var(--red);   /* Push focus shadow away */
+    background-color: var(--white);
+    padding: 2px 1px 0 0;
 }
 
-/* -------------GLOBAL STYLES (mobile first/small) ---------*/
-
-
-/*-------------- Breakpoints based on mockups ----------------*/
-
-/*------------------- MEDIA QUERY (xl) ---------------------*/
-
-/*-------------- Small-min-width: 428px ----------------*/
-@media screen and (min-width: 428px) {
-    nav {
-        width: fit-content;
-        display: grid;
-        grid-template-columns: auto;
-    }
+input[type=radio]:checked + label::before {
+    content: "\2022";
+    color: var(--white);
+    background: var(--red);
 }
-/*------------- MEDIA QUERY (medium) ----------------*/
 
-/*-------------- Medium-width: 834px ----------------*/
-@media screen and (medium-width: 834px) {
-    nav ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.5rem;
-    }    
+input[type=radio]:focus{
+	outline: none;
 }
-/*-------------------- MEDIA QUERY (large) -----------------*/
-/*-------------- Large-min-width: 1280px ----------------*/
-@media screen and (large-min-width: 1280px) {
-    nav ul {
-        display: grid;
-        grid-template-columns: auto;
-    }
-}
-/*-------------- XL-min-width: 1440px ----------------*/
-@media screen and (XL-min-width: 1440px) {
-    nav ul {
-       display: grid;
-       grid-template-columns: auto; 
-    }       
-    }
 
+input[type=radio]:focus + label::before {
+    box-shadow: 0 0 0 2px var(--coral);
+}
+
+/* Textarea Styles */
+textarea{
+    height: 5rem;
+}
+
+/* Submit Button Styles */
+#my-submit{
+    padding: 1rem 8px;
+    margin: 1rem auto;
+    width: 100%;
+    height: auto;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Submit Button Hover Styles */
+#my-submit:hover{
+    background-color: var(--coral);
+    color: var(--dk-gray);
+}
+
+figure{
+   margin: 1em 40px; 
+}
+
+/* Code Styles */
+code{
+    font-family: var(--code-fonts);
+    font-size: 1rem;
+}
+
+/* for the pre block */
+pre{
+    font-family: var(--code-fonts);
+    margin: 1em 0;
+}
+
+pre code{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid var(--dk-gray);
+}
+
+code div{
+    padding: 1rem;
+    overflow: scroll;
+}
