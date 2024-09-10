@@ -9,10 +9,6 @@ I don't know how to delete my css and save it in order to retain it to add back 
    v2.0 | 20110126
    License: none (public domain)
 */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -321,4 +317,219 @@ pre code{
 code div{
     padding: 1rem;
     overflow: scroll;
+}
+
+:root{
+
+    /* -------------------- ROOT VARIABLES ------------------- */
+    /*Text Content Habibi
+    Text Headings Irish Grover
+    Font Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
+    /* text and background colors*/
+    --Green: #06A816;
+    --Orange: #E75D02;
+    --Black: #000000;
+    --White: #ffffff;
+
+    --text-shadow: 5px var(--Black);
+    /* Font Stacks*/
+    --heading-fonts: 'Irish Grover';
+    --body-fonts: 'Habibi';
+}
+
+body{
+    font-family: var(--body_fonts);
+    color: var(--Black);    
+}
+
+header{
+    background-color: var(--Green);
+    color: var(--White);
+}
+
+header, footer{
+    background-color: var(--Green);
+    text-align: left;
+    max-width: 1000px - 32px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: var(--White)
+}
+
+main{
+    text-align: center;
+}
+
+h1{
+    text-shadow: var(--Black);
+}
+
+h1, h2, h3{
+    text-align: left;
+    font-family: var(--heading-fonts);
+}
+
+h2{
+    margin: 0;
+    text-align: right;
+    padding: 4px;
+}
+
+h3{
+    margin: 0;
+    padding: 4px;
+}
+
+img{
+    display: block;
+}
+
+nav{
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    text-align: right;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(3fr, 1fr);
+    text-align: right;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    width: 250px;
+    margin: 2rem auto;
+}
+
+nav a {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-size: 1.25rem;
+    border: 2px solid var(--White);
+    border-radius: 5px;
+}
+
+main{
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+section{
+    padding: 1rem;
+}
+
+#static {
+    margin: 0 auto;
+}
+
+#fluid {
+    margin: 0 auto;
+}
+
+html {
+    font-family: 'Habibi';
+}
+
+h1 {
+    font-family: 'Irish Grover';
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.75em;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.25em;
+    color: var(--Black);
+    text-align: left;
+}
+
+#fruits {
+    text-align: left;
+    margin: 3rem auto;
+}
+
+#vegetables {
+    text-align: left;
+    margin: 3rem auto;
+}
+
+body {
+    background-color: var(--White);
+    text-align: left;
+}
+
+footer {
+    padding: 0;
+    background-color: var(--Green);
+    color: var(--White);
+    text-align: center;
+}
+
+footer p {
+    display: grid;
+    padding: 0;
+    text-align: center;
+}
+
+footer > a{
+    text-align: center;
+}
+
+footer ul {
+    text-align: center;
+}
+
+/* -------------GLOBAL STYLES (mobile first/small) ---------*/
+
+
+/*-------------- Breakpoints based on mockups ----------------*/
+
+/*------------------- MEDIA QUERY (xl) ---------------------*/
+
+/*-------------- Small-min-width: 428px ----------------*/
+@media screen and (min-width: 428px) {
+    nav {
+        width: fit-content;
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+/*------------- MEDIA QUERY (medium) ----------------*/
+
+/*-------------- Medium-width: 834px ----------------*/
+@mdia screen and (medium-width: 834px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+}
+
+/*-------------------- MEDIA QUERY (large) -----------------*/
+/*-------------- Large-min-width: 1280px ----------------*/
+
+@media screen and (large-min-width: 1280px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.5rem;
+    }
+}
+
+/*-------------- XL-min-width: 1440px ----------------*/
+
+@media screen and (XL-min-width: 1440px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.5rem;
+    }
 }
