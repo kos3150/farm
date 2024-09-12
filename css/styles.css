@@ -385,7 +385,10 @@ img{
 nav{
     margin: 0 auto;
     padding: 0.5rem 0;
+    background-color: var(--Orange);
     text-align: right;
+    text-align: center;
+    
 }
 
 nav ul {
@@ -403,7 +406,7 @@ nav a {
     margin: 1rem auto;
     padding: 0.5rem;
     text-align: center;
-    background-color: var(--Orange);
+    
     color: var(--White);
     font-size: 1.25rem;
     border: 2px solid var(--White);
@@ -465,8 +468,7 @@ body {
 div{
     display: block;
     margin: 1rem auto;
-    text-align: center;
-    background-color: var(--Orange);
+    text-align: center;  
     color: var(--White);
     font-size: 1.25rem;
     padding: 0;
@@ -513,7 +515,7 @@ footer ul {
 /*------------- MEDIA QUERY (medium) ----------------*/
 
 /*-------------- Medium-width: 834px ----------------*/
-@mdia screen and (medium-width: 834px) {
+@media screen and (medium-width: 834px) {
     nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
