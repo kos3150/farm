@@ -68,8 +68,7 @@ table {
 /* Body Styles */
 /* You will need to add more, but this adds a background pattern to the page */
 body{
-    /*background: var(--coral) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23613a43' fill-opacity='0.2'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-    */
+    background: var(--coral) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23613a43' fill-opacity='0.2'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
     font-family: var(--fonts);
     color: var(--dk-gray);
     margin: 0;
@@ -82,7 +81,7 @@ header, main, footer{
     padding: 1rem;
     width: calc(1000px - 2rem);
     margin: 0 auto;
-    /*background-color: var(--white);/*
+    background-color: var(--white);
 }
 
 /* Shared header and footer styles */
@@ -167,7 +166,7 @@ a:hover{
 
 /* Link Focus Styles */
 a:focus{
-    /*outline-color: var(--coral);*/
+    outline-color: var(--coral);
     outline-offset: 2px;
 }
 
@@ -186,7 +185,7 @@ input, label, textarea{
 
 /* For the asterisks in the form section */
 .required{
-    /*color: var(--coral);*/
+    color: var(--coral);
 }
 
 /* Shared input and textarea Styles */
@@ -198,8 +197,8 @@ input, textarea{
 
 /* Input and Textarea Focus Styles */
 input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
-    /*border-color: var(--coral);*/
-    /*outline: 2px solid var(--coral);*/
+    border-color: var(--coral);
+    outline: 2px solid var(--coral);
 }
 
 /* input styles */
@@ -264,7 +263,7 @@ input[type=radio]:focus{
 }
 
 input[type=radio]:focus + label::before {
-    /*box-shadow: 0 0 0 2px var(--coral);*/
+    box-shadow: 0 0 0 2px var(--coral);
 }
 
 /* Textarea Styles */
@@ -279,7 +278,7 @@ textarea{
     width: 100%;
     height: auto;
     background-color: var(--red);
-    /*color: var(--white);*/
+    color: var(--white);
     border: none;
     font-size: 1.1rem;
     font-weight: bold;
@@ -287,7 +286,7 @@ textarea{
 
 /* Submit Button Hover Styles */
 #my-submit:hover{
-    /*background-color: var(--coral);*/
+    background-color: var(--coral);
     color: var(--dk-gray);
 }
 
@@ -360,7 +359,7 @@ main{
 }
 
 h1{
-    text-align: left;
+    text-align: var(--Black);
 }
 
 h1, h2, h3{
@@ -386,10 +385,7 @@ img{
 nav{
     margin: 0 auto;
     padding: 0.5rem 0;
-    background-color: var(--Orange);
     text-align: right;
-    text-align: center;
-    
 }
 
 nav ul {
@@ -407,7 +403,7 @@ nav a {
     margin: 1rem auto;
     padding: 0.5rem;
     text-align: center;
-    
+    background-color: var(--Orange);
     color: var(--White);
     font-size: 1.25rem;
     border: 2px solid var(--White);
@@ -469,7 +465,8 @@ body {
 div{
     display: block;
     margin: 1rem auto;
-    text-align: center;  
+    text-align: center;
+    background-color: var(--Orange);
     color: var(--White);
     font-size: 1.25rem;
     padding: 0;
@@ -516,7 +513,7 @@ footer ul {
 /*------------- MEDIA QUERY (medium) ----------------*/
 
 /*-------------- Medium-width: 834px ----------------*/
-@media screen and (medium-width: 834px) {
+@mdia screen and (medium-width: 834px) {
     nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
