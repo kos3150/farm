@@ -58,9 +58,7 @@ table {
 :root{
     --red: #613A43;
     --tan: #837C6F;
-    --mint: #AFC0B4;
-    --white: #F6F3EA;
-    --coral: #CE7871;
+    --mint: #AFC0B4;    
     --dk-gray: #222;
 
     --fonts: 'Trebuchet MS', Verdana, sans-serif;
@@ -293,7 +291,7 @@ textarea{
 }
 
 figure{
-   margin: 1em 40px; 
+    margin: 1em 40px; 
 }
 
 /* Code Styles */
@@ -361,7 +359,7 @@ main{
 }
 
 h1{
-    text-shadow: var(--Black);
+    text-align: left;
 }
 
 h1, h2, h3{
