@@ -341,7 +341,7 @@ body{
 header{
     background-color: var(--green);
     color: var(--white);
-    text-align: center;
+    text-align: left;
 }
 
 h1{
@@ -351,6 +351,7 @@ h1{
 }
 
 header p {
+    font-family: "Habibi", serif;
     font-style: italic;
     padding-left: 0px;
 }
@@ -363,7 +364,7 @@ nav h2 {
 }
 
 nav ul li {
-    
+    font-family: "Habibi", serif;
     text-align: center;
     background-color: var(--orange);
     border:2px solid var(--white);
@@ -374,8 +375,7 @@ nav ul li {
     margin-bottom: 15px;
 }
 
-nav ul li:last-of-type {
-   
+nav ul li:last-of-type {   
     width: 60px;
     height: 60px;
     position: fixed;
@@ -386,21 +386,21 @@ nav ul li:last-of-type {
 a[href="#top"] {
     background-color: var(--orange);
     border:2px solid var(--white);   
-    padding: 10px;
+    padding: 5px;
     line-height: 3em;
 }
 
 nav a {
-    
     background-color: var(--orange);
     color: var(--white);
-    text-decoration: none;
+    text-decoration: none;   
     padding: 0px 100px;
     line-height: 40px;
 }
 
 main {
-    text-align: center;
+    font-family: "Habibi", serif;
+    text-align: left;
 }
 
 img {
@@ -413,7 +413,6 @@ nav{
     text-align: right;
 }
 
-
 h2 {
     font-family: "Irish Grover", system-ui;
     font-size: 1.75em;
@@ -423,7 +422,6 @@ h2 {
 h3 {
     font-family: "Irish Grover", system-ui;
     font-size: 1.25em;
-    color: var(--Black);
     text-align: left;
 }
 
@@ -438,33 +436,39 @@ h3 {
 }
 
 div{
-    display: block;
+    font-family: "Habibi", serif;
+    text-align: right;
     margin: 1rem auto;
     text-align: center;
-    
-    color: var(--White);
+    color: var(--white);
     font-size: 1.25rem;
     padding: 0;
     width: 250px;
 }
 
 footer {
-    padding: 0;
-    background-color: var(--Green);
-    color: var(--White);
-    text-align: center;
+    padding: 1rem 2rem;
+    background-color: var(--green);
+    color: var(--white);
+    text-align: left;
 }
 
-footer p {   
+footer p { 
+    font-family: "Habibi", serif;
+    color: var(--white);
+    text-align: center; 
     padding: 0;
-    text-align: center;
 }
 
 footer > a{
+    font-family: "Habibi", serif;
+    color: var(--white);
     text-align: center;
 }
 
 footer ul {
+    font-family: "Habibi", serif;
+    color: var(--white);
     text-align: center;
 }
 
