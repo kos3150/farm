@@ -324,43 +324,76 @@ code div{
     Text Headings Irish Grover
     Font Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
     /* text and background colors*/
-    --Green: #06A816;
-    --Orange: #E75D02;
-    --Black: #000000;
-    --White: #ffffff;
-
-    --text-shadow: 5px var(--Black);
-    /* Font Stacks*/
-    --heading-fonts: 'Irish Grover';
-    --body-fonts: 'Habibi';
+    font-family: "Habibi", serif;
+    font-size: 1.25em;
+    --green: #06A816;
+    --orange: #E75D02;
+    --black: #000000;
+    --white: #ffffff; 
 }
 
+/* ----------- GLOBAL STYLES (mobil first/small  --------------- */
+
 body{
-    font-family: var(--body_fonts);
-    color: var(--Black);    
+    min-width: 428px;  
 }
 
 header{
-    background-color: var(--Green);
-    color: var(--White);
-}
-
-header, footer{
-    background-color: var(--Green);
-    text-align: left;
-    max-width: 1000px - 32px;
-    margin: 0 auto;
-    padding: 1rem;
-    color: var(--White)
-}
-
-main{
+    background-color: var(--green);
+    color: var(--white);
     text-align: center;
 }
 
 h1{
-    text-shadow: var(--Black);
-    text-align: left;
+    font-family: "Irish Grover", system-ui;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px var(--black);
+}
+
+header p {
+    font-style: italic;
+    padding-left: 0px;
+}
+
+nav h2 {
+    visibility:hidden;
+    height: 1px;
+    width: 1px;
+}
+
+nav ul li {
+    text-align: center;
+    background-color: var(--orange);
+    border:2px solid var(--white);
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+nav ul li:last-of-type {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right:0px;
+    bottom: 0px;
+}
+
+a[href="#top"] {
+    padding: 10px;
+    line-height: 3em;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0px 100px;
+    line-height: 40px;
+}
+
+main {
+    text-align: center;
 }
 
 h1, h2, h3{
@@ -418,7 +451,7 @@ main{
 }
 
 section{
-    padding: 1rem;
+    padding: 1rem;   
 }
 
 #static {
