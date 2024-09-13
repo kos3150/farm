@@ -391,6 +391,7 @@ nav{
 
 nav ul {
     display: grid; 
+    
     text-align: right;
     gap: 1rem;
     list-style-type: none;
@@ -404,7 +405,7 @@ nav a {
     margin: 1rem auto;
     padding: 0.5rem;
     text-align: center;
-    background-color: var(--Orange);
+    background-color: var(--Orange) ;
     color: var(--White);
     font-size: 1.25rem;
     border: 2px solid var(--White);
@@ -467,7 +468,7 @@ div{
     display: block;
     margin: 1rem auto;
     text-align: center;
-    background-color: var(--Orange);
+    
     color: var(--White);
     font-size: 1.25rem;
     padding: 0;
