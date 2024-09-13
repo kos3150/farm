@@ -356,12 +356,14 @@ header p {
 }
 
 nav h2 {
+    
     visibility:hidden;
     height: 1px;
     width: 1px;
 }
 
 nav ul li {
+    
     text-align: center;
     background-color: var(--orange);
     border:2px solid var(--white);
@@ -373,6 +375,7 @@ nav ul li {
 }
 
 nav ul li:last-of-type {
+   
     width: 60px;
     height: 60px;
     position: fixed;
@@ -381,11 +384,15 @@ nav ul li:last-of-type {
 }
 
 a[href="#top"] {
+    background-color: var(--orange);
+    border:2px solid var(--white);   
     padding: 10px;
     line-height: 3em;
 }
 
 nav a {
+    
+    background-color: var(--orange);
     color: var(--white);
     text-decoration: none;
     padding: 0px 100px;
@@ -396,23 +403,7 @@ main {
     text-align: center;
 }
 
-h1, h2, h3{
-    text-align: left;
-    font-family: var(--heading-fonts);
-}
-
-h2{
-    margin: 0;
-    text-align: right;
-    padding: 4px;
-}
-
-h3{
-    margin: 0;
-    padding: 4px;
-}
-
-img{
+img {
     display: block;
 }
 
@@ -422,61 +413,15 @@ nav{
     text-align: right;
 }
 
-nav ul {
-    display: grid; 
-    
-    text-align: right;
-    gap: 1rem;
-    list-style-type: none;
-    padding: 0;
-    width: 250px;
-    margin: 2rem auto;
-}
-
-nav a {
-    display: block;
-    margin: 1rem auto;
-    padding: 0.5rem;
-    text-align: center;
-    background-color: var(--Orange) ;
-    color: var(--White);
-    font-size: 1.25rem;
-    border: 2px solid var(--White);
-    border-radius: 5px;
-}
-
-main{
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-section{
-    padding: 1rem;   
-}
-
-#static {
-    margin: 0 auto;
-}
-
-#fluid {
-    margin: 0 auto;
-}
-
-html {
-    font-family: 'Habibi';
-}
-
-h1 {
-    font-family: 'Irish Grover';
-    font-size: 2.5em;
-}
 
 h2 {
+    font-family: "Irish Grover", system-ui;
     font-size: 1.75em;
     text-align: left;
 }
 
 h3 {
+    font-family: "Irish Grover", system-ui;
     font-size: 1.25em;
     color: var(--Black);
     text-align: left;
@@ -490,11 +435,6 @@ h3 {
 #vegetables {
     text-align: left;
     margin: 3rem auto;
-}
-
-body {
-    background-color: var(--White);
-    text-align: left;
 }
 
 div{
