@@ -384,6 +384,7 @@ img{
 
 nav{
     margin: 0 auto;
+    background-color: var(--Orange);
     padding: 0.5rem 0;
     text-align: right;
 }
@@ -403,7 +404,6 @@ nav a {
     margin: 1rem auto;
     padding: 0.5rem;
     text-align: center;
-    background-color: var(--Orange);
     color: var(--White);
     font-size: 1.25rem;
     border: 2px solid var(--White);
@@ -466,7 +466,6 @@ div{
     display: block;
     margin: 1rem auto;
     text-align: center;
-    background-color: var(--Orange);
     color: var(--White);
     font-size: 1.25rem;
     padding: 0;
@@ -480,8 +479,7 @@ footer {
     text-align: center;
 }
 
-footer p {
-   
+footer p {   
     padding: 0;
     text-align: center;
 }
@@ -513,7 +511,7 @@ footer ul {
 /*------------- MEDIA QUERY (medium) ----------------*/
 
 /*-------------- Medium-width: 834px ----------------*/
-@mdia screen and (medium-width: 834px) {
+@media screen and (medium-width: 834px) {
     nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
