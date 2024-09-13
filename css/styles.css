@@ -60,7 +60,6 @@ table {
     --tan: #837C6F;
     --mint: #AFC0B4;    
     --dk-gray: #222;
-
     --fonts: 'Trebuchet MS', Verdana, sans-serif;
     --code-fonts: 'Lucida Console', monospace;
 }
@@ -319,7 +318,8 @@ code div{
 
 :root{
 
-    /* -------------------- ROOT VARIABLES ------------------- */
+    /* -------------------- ROOT VARIABLES ------------------- 
+    Save all changes*/
     /*Text Content Habibi
     Text Headings Irish Grover
     Font Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
@@ -359,7 +359,8 @@ main{
 }
 
 h1{
-    text-align: var(--Black);
+    text-shadow: var(--Black);
+    text-align: left;
 }
 
 h1, h2, h3{
@@ -384,7 +385,6 @@ img{
 
 nav{
     margin: 0 auto;
-    background-color: var(--Orange);
     padding: 0.5rem 0;
     text-align: right;
 }
@@ -404,6 +404,7 @@ nav a {
     margin: 1rem auto;
     padding: 0.5rem;
     text-align: center;
+    background-color: var(--Orange);
     color: var(--White);
     font-size: 1.25rem;
     border: 2px solid var(--White);
@@ -466,6 +467,7 @@ div{
     display: block;
     margin: 1rem auto;
     text-align: center;
+    background-color: var(--Orange);
     color: var(--White);
     font-size: 1.25rem;
     padding: 0;
