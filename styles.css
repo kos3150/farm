@@ -1,0 +1,259 @@
+/* -------------------- IMPORTED FONTS -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+
+/*-------------------- CSS REST ---------------------------
+CSS Reset only works if I add it before I write my css.
+I don't know how to delete my css and save it in order to retain it to add back to my style sheet after the CSS REST*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+
+    /* -------------------- ROOT VARIABLES ------------------- 
+    Save all changes*/
+    /*Text Content Habibi
+    Text Headings Irish Grover
+    Font Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
+    /* text and background colors*/
+    font-family: "Habibi", serif;
+    font-size: 1.25em;
+    --green: #06A816;
+    --orange: #E75D02;
+    --black: #000000;
+    --white: #ffffff; 
+}
+
+/* ----------- GLOBAL STYLES (mobil first/small  --------------- */
+
+body{
+    min-width: 428px;
+    background-color: #000000;  
+}
+
+main{
+    background-color: #ffffff;
+}
+
+header{
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+}
+
+h1{
+    font-family: "Irish Grover", system-ui;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px var(--black);
+}
+
+header p {
+    font-family: "Habibi", serif;
+    font-style: italic;
+    padding-left: 0px;
+}
+
+nav h2 { 
+    visibility:hidden;
+    height: 1px;
+    width: 1px;
+}
+
+nav ul li {
+    font-family: "Habibi", serif;
+    text-align: center;
+    background-color: var(--orange);
+    border:2px solid var(--white);
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+nav ul li:last-of-type {   
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right:0px;
+    bottom: 0px;
+}
+
+a[href="#top"] {
+    background-color: var(--orange);
+    border:2px solid var(--white);   
+    padding: 5px;
+    line-height: 3em;
+}
+
+nav a {
+    background-color: var(--orange);
+    color: var(--white);
+    text-decoration: none;   
+    padding: 0px 100px;
+    line-height: 40px;
+}
+
+main {
+    font-family: "Habibi", serif;
+    text-align: left;
+}
+
+img {
+    display: block;
+}
+
+nav{
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    text-align: right;
+}
+
+h2 {
+    font-family: "Irish Grover", system-ui;
+    font-size: 1.75em;
+    text-align: left;
+}
+
+h3 {
+    font-family: "Irish Grover", system-ui;
+    font-size: 1.25em;
+    text-align: left;
+}
+
+#fruits {
+    text-align: left;
+    margin: 3rem auto;
+}
+
+#vegetables {
+    text-align: left;
+    margin: 3rem auto;
+}
+
+div{
+    font-family: "Habibi", serif;
+    margin: 1rem auto;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.25rem;
+    padding: 0;
+    width: 250px;
+}
+
+footer {
+    padding: 1rem 2rem;
+    background-color: var(--green);
+    color: var(--white);
+    text-align: left;
+}
+
+footer p { 
+    font-family: "Habibi", serif;
+    color: var(--white);
+    text-align: center; 
+    padding: 0;
+}
+
+footer > a{
+    font-family: "Habibi", serif;
+    color: var(--white);
+    text-align: center;
+}
+
+footer ul {
+    font-family: "Habibi", serif;
+    color: var(--white);
+    text-align: center;
+}
+
+/*-------------- Breakpoints based on mockups ----------------*/
+
+/*------------------- MEDIA QUERY (xl) ---------------------*/
+
+/*-------------- Small-min-width: 428px ----------------*/
+@media screen and (min-width: 428px) {
+    nav {
+        width: fit-content;
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+/*------------- MEDIA QUERY (medium) ----------------*/
+
+/*-------------- Medium-mid-width: 834px ----------------*/
+@media screen and (min-width: 834px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+}
+
+/*-------------------- MEDIA QUERY (large) -----------------*/
+/*-------------- Large-min-width: 1280px ----------------*/
+
+@media screen and (min-width: 1280px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.5rem;
+    }
+}
+
+/*-------------- XL-min-width: 1440px ----------------*/
+
+@media screen and (min-width: 1440px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.5rem;
+    }
+}

@@ -54,7 +54,6 @@ table {
 	border-spacing: 0;
 }
 
-:root{
 
     /* -------------------- ROOT VARIABLES ------------------- 
     Save all changes*/
@@ -62,18 +61,25 @@ table {
     Text Headings Irish Grover
     Font Sizes H1 2.5em, H2 1.75em, H3 1.25em*/
     /* text and background colors*/
-    font-family: "Habibi", serif;
-    font-size: 1.25em;
-    --green: #06A816;
-    --orange: #E75D02;
-    --black: #000000;
-    --white: #ffffff; 
+
+:root{
+        font-family: "Habibi", serif;
+        font-size: 1.25em;
+        --green: #06A816;
+        --orange: #E75D02;
+        --black: #000000;
+        --white: #ffffff; 
 }
 
 /* ----------- GLOBAL STYLES (mobil first/small  --------------- */
 
 body{
-    min-width: 428px;  
+   display: grid;
+    min-width: 428px;        
+}
+
+main{
+    background-color: #ffffff;
 }
 
 header{
@@ -94,8 +100,8 @@ header p {
     padding-left: 0px;
 }
 
-nav h2 { 
-    visibility:hidden;
+nav h2 {
+    visibility: hidden;
     height: 1px;
     width: 1px;
 }
@@ -104,7 +110,7 @@ nav ul li {
     font-family: "Habibi", serif;
     text-align: center;
     background-color: var(--orange);
-    border:2px solid var(--white);
+    border: 2px solid var(--white);
     width: 300px;
     height: 40px;
     border-radius: 5px;
@@ -112,17 +118,16 @@ nav ul li {
     margin-bottom: 15px;
 }
 
-nav ul li:last-of-type {   
+nav ul li:last-of-type {
     width: 60px;
     height: 60px;
     position: fixed;
-    right:0px;
+    right: 0px;
     bottom: 0px;
 }
 
 a[href="#top"] {
     background-color: var(--orange);
-    border:2px solid var(--white);   
     padding: 5px;
     line-height: 3em;
 }
@@ -130,7 +135,7 @@ a[href="#top"] {
 nav a {
     background-color: var(--orange);
     color: var(--white);
-    text-decoration: none;   
+    text-decoration: none;
     padding: 0px 100px;
     line-height: 40px;
 }
@@ -189,10 +194,10 @@ footer {
     text-align: left;
 }
 
-footer p { 
+footer p {
     font-family: "Habibi", serif;
     color: var(--white);
-    text-align: center; 
+    text-align: center;
     padding: 0;
 }
 
@@ -206,52 +211,4 @@ footer ul {
     font-family: "Habibi", serif;
     color: var(--white);
     text-align: center;
-}
-
-/* -------------GLOBAL STYLES (mobile first/small) ---------*/
-
-
-/*-------------- Breakpoints based on mockups ----------------*/
-
-/*------------------- MEDIA QUERY (xl) ---------------------*/
-
-/*-------------- Small-min-width: 428px ----------------*/
-@media screen and (min-width: 428px) {
-    nav {
-        width: fit-content;
-        display: grid;
-        grid-template-columns: auto;
-    }
-}
-
-/*------------- MEDIA QUERY (medium) ----------------*/
-
-/*-------------- Medium-width: 834px ----------------*/
-@media screen and (medium-width: 834px) {
-    nav ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.5rem;
-    }
-}
-
-/*-------------------- MEDIA QUERY (large) -----------------*/
-/*-------------- Large-min-width: 1280px ----------------*/
-
-@media screen and (large-min-width: 1280px) {
-    nav ul {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 0.5rem;
-    }
-}
-
-/*-------------- XL-min-width: 1440px ----------------*/
-
-@media screen and (XL-min-width: 1440px) {
-    nav ul {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 0.5rem;
-    }
 }
