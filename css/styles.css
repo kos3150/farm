@@ -217,20 +217,9 @@ footer ul {
 
 /*-------------- Breakpoints based on mockups ----------------*/
 
-/*------------------- MEDIA QUERY (xl) ---------------------*/
-
-/*-------------- Small-min-width: 428px ----------------*/
-@media screen and (min-width: 428px) {
-    nav {
-        width: fit-content;
-        display: grid;
-        grid-template-columns: auto;
-    }
-}
-
 /*------------- MEDIA QUERY (medium) ----------------*/
 
-/*-------------- Medium-mid-width: 834px ----------------*/
+/*-------------- mid-width: 834px ----------------*/
 @media screen and (min-width: 834px) {
     nav ul {
         display: grid;
@@ -240,7 +229,7 @@ footer ul {
 }
 
 /*-------------------- MEDIA QUERY (large) -----------------*/
-/*-------------- Large-min-width: 1280px ----------------*/
+/*-------------- min-width: 1280px ----------------*/
 
 @media screen and (min-width: 1280px) {
     nav ul {
@@ -250,7 +239,7 @@ footer ul {
     }
 }
 
-/*-------------- XL-min-width: 1440px ----------------*/
+/*-------------- min-width: 1440px ----------------*/
 
 @media screen and (min-width: 1440px) {
     nav ul {
