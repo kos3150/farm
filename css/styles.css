@@ -75,7 +75,7 @@ table {
 
 body{
    display: grid;
-    min-width: 428px;        
+   min-width: 428px;     
 }
 
 main{
@@ -86,6 +86,7 @@ header{
     background-color: var(--green);
     color: var(--white);
     text-align: center;
+    padding: 25px;
 }
 
 h1{
@@ -143,6 +144,7 @@ nav a {
 main {
     font-family: "Habibi", serif;
     text-align: left;
+    padding: 15px;
 }
 
 img {
@@ -212,3 +214,49 @@ footer ul {
     color: var(--white);
     text-align: center;
 }
+
+/*-------------- Breakpoints based on mockups ----------------*/
+
+/*------------------- MEDIA QUERY (xl) ---------------------*/
+
+/*-------------- Small-min-width: 428px ----------------*/
+@media screen and (min-width: 428px) {
+    nav {
+        width: fit-content;
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+/*------------- MEDIA QUERY (medium) ----------------*/
+
+/*-------------- Medium-mid-width: 834px ----------------*/
+@media screen and (min-width: 834px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+}
+
+/*-------------------- MEDIA QUERY (large) -----------------*/
+/*-------------- Large-min-width: 1280px ----------------*/
+
+@media screen and (min-width: 1280px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.5rem;
+    }
+}
+
+/*-------------- XL-min-width: 1440px ----------------*/
+
+@media screen and (min-width: 1440px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.5rem;
+    }
+}
+
