@@ -73,9 +73,26 @@ table {
 
 /* ----------- GLOBAL STYLES (mobil first/small  --------------- */
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body{
    display: grid;
    min-width: 428px;     
+}
+
+@media screen and (min-width: 428px) {
+    h2 {
+        min-width: 428px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0.5rem;
+    }
 }
 
 main{
@@ -148,7 +165,7 @@ main {
 }
 
 img {
-    display: block;
+    max-width: 100%;
 }
 
 nav{
@@ -221,7 +238,8 @@ footer ul {
 
 /*-------------- mid-width: 834px ----------------*/
 @media screen and (min-width: 834px) {
-    nav ul {
+    h2 {
+        font-size: 1.75em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0.5rem;
@@ -232,7 +250,8 @@ footer ul {
 /*-------------- min-width: 1280px ----------------*/
 
 @media screen and (min-width: 1280px) {
-    nav ul {
+    h2 {
+        font-size: 1.75em;
         display: grid;
         grid-template-columns: auto;
         gap: 0.5rem;
@@ -242,7 +261,8 @@ footer ul {
 /*-------------- min-width: 1440px ----------------*/
 
 @media screen and (min-width: 1440px) {
-    nav ul {
+    h2 {
+        font-size: 1.75em;
         display: grid;
         grid-template-columns: auto;
         gap: 0.5rem;
