@@ -33,7 +33,8 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: grid;
+    margin: 0 auto;
 }
 body {
 	line-height: 1;
@@ -77,13 +78,20 @@ html {
     box-sizing: border-box;
 }
 
+#grid-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
 body{
    display: grid;
-   min-width: 428px;     
+   min-width: 428px;
+    ;
 }
 
 @media screen and (min-width: 428px) {
@@ -181,6 +189,7 @@ h2 {
 }
 
 h3 {
+    display: grid;
     font-family: "Irish Grover", system-ui;
     font-size: 1.25em;
     text-align: left;
