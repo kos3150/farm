@@ -89,15 +89,11 @@ html {
 }
 
 body{
-   display: grid;
    min-width: 428px;
-    ;
 }
 
 @media screen and (min-width: 428px) {
-    h2 {
-        min-width: 428px;
-        display: grid;
+    body {
         grid-template-columns: auto;
         gap: 0.5rem;
     }
@@ -188,6 +184,10 @@ h2 {
     text-align: left;
 }
 
+section h3 {
+    grid-column: 1 / -1;
+}
+
 h3 {
     display: grid;
     font-family: "Irish Grover", system-ui;
@@ -219,7 +219,7 @@ footer {
     padding: 1rem 2rem;
     background-color: var(--green);
     color: var(--white);
-    text-align: left;
+    text-align: center;
 }
 
 footer p {
@@ -247,11 +247,9 @@ footer ul {
 
 /*-------------- mid-width: 834px ----------------*/
 @media screen and (min-width: 834px) {
-    h2 {
-        font-size: 1.75em;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.5rem;
+    body {
+        grid-template-columns: auto;
+        gap: 0.5rem;          
     }
 }
 
@@ -259,9 +257,7 @@ footer ul {
 /*-------------- min-width: 1280px ----------------*/
 
 @media screen and (min-width: 1280px) {
-    h2 {
-        font-size: 1.75em;
-        display: grid;
+    body {    
         grid-template-columns: auto;
         gap: 0.5rem;
     }
@@ -270,9 +266,7 @@ footer ul {
 /*-------------- min-width: 1440px ----------------*/
 
 @media screen and (min-width: 1440px) {
-    h2 {
-        font-size: 1.75em;
-        display: grid;
+    body {
         grid-template-columns: auto;
         gap: 0.5rem;
     }
